@@ -18,22 +18,23 @@
                 </div>
             </div>
 
+            {{--
             <div class="row">
-              <div class="col-md-12">
-                  <div class="section-components no-select">
-                      @if(!$componentGroups->isEmpty() || !$ungroupedComponents->isEmpty())
-                      @include('dashboard.partials.components')
-                      @else
-                      <ul class="list-group components">
-                          <li class="list-group-item">
-                              <a href="{{ cachet_route('dashboard.components.create') }}">{{ trans('dashboard.components.add.message') }}</a>
-                          </li>
-                      </ul>
-                      @endif
-                  </div>
-              </div>
+                <div class="col-md-12">
+                    <div class="section-components no-select">
+                        @if(!$componentGroups->isEmpty() || !$ungroupedComponents->isEmpty())
+                        @include('dashboard.partials.components')
+                        @else
+                        <ul class="list-group components">
+                            <li class="list-group-item">
+                                <a href="{{ cachet_route('dashboard.components.create') }}">{{ trans('dashboard.components.add.message') }}</a>
+                            </li>
+                        </ul>
+                        @endif
+                    </div>
+                </div>
             </div>
-
+--}}
             <div class="row">
                 <div class="col-sm-12 col-lg-6">
                     <div class="stats-widget">
@@ -59,6 +60,8 @@
                     </div>
                 </div>
             </div>
+
+            {{--
 
             <div class="row">
                 <div class="col-sm-12 col-lg-6">
@@ -88,6 +91,7 @@
                 </div>
                 @endif
             </div>
+            --}}
             @includeWhen($welcomeUser, 'dashboard.partials.welcome-modal')
         </div>
     </div>
